@@ -1,0 +1,143 @@
+{
+  "checksum": "b85d632e66f15ed524cd8434b300fa14",
+  "root": "esy-nginx@link-dev:./package.json",
+  "node": {
+    "yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79@d41d8cd9": {
+      "id":
+        "yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79@d41d8cd9",
+      "name": "yarn-pkg-config",
+      "version":
+        "github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-pcre@github:esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e@d41d8cd9": {
+      "id":
+        "esy-pcre@github:esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e@d41d8cd9",
+      "name": "esy-pcre",
+      "version":
+        "github:esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-openssl@archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1g.tar.gz#sha1:33324ff957edaae8ae575817b456320378da46ff@41b6fb3d": {
+      "id":
+        "esy-openssl@archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1g.tar.gz#sha1:33324ff957edaae8ae575817b456320378da46ff@41b6fb3d",
+      "name": "esy-openssl",
+      "version":
+        "archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1g.tar.gz#sha1:33324ff957edaae8ae575817b456320378da46ff",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1g.tar.gz#sha1:33324ff957edaae8ae575817b456320378da46ff"
+        ]
+      },
+      "overrides": [ "esy.lock/overrides/41b6fb3db953254b0cb4c5e1b546f3f4" ],
+      "dependencies": [
+        "@opam/conf-pkg-config@opam:1.3@93481236",
+        "@opam/conf-autoconf@github:esy-packages/esy-autoconf:package.json#fb93edf@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "esy-nginx@link-dev:./package.json": {
+      "id": "esy-nginx@link-dev:./package.json",
+      "name": "esy-nginx",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-pcre@github:esy-packages/esy-pcre#c5076c8facbebaf5f5718c0e270418fd218add7e@d41d8cd9",
+        "esy-openssl@archive:https://github.com/openssl/openssl/archive/OpenSSL_1_1_1g.tar.gz#sha1:33324ff957edaae8ae575817b456320378da46ff@41b6fb3d"
+      ],
+      "devDependencies": []
+    },
+    "esy-help2man@github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443@d41d8cd9": {
+      "id":
+        "esy-help2man@github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443@d41d8cd9",
+      "name": "esy-help2man",
+      "version":
+        "github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "@opam/conf-pkg-config@opam:1.3@93481236": {
+      "id": "@opam/conf-pkg-config@opam:1.3@93481236",
+      "name": "@opam/conf-pkg-config",
+      "version": "opam:1.3",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "conf-pkg-config",
+          "version": "1.3",
+          "path": "esy.lock/opam/conf-pkg-config.1.3"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride":
+            "esy.lock/overrides/opam__s__conf_pkg_config_opam__c__1.3_opam_override"
+        }
+      ],
+      "dependencies": [
+        "yarn-pkg-config@github:esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79@d41d8cd9",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "@opam/conf-autoconf@github:esy-packages/esy-autoconf:package.json#fb93edf@d41d8cd9": {
+      "id":
+        "@opam/conf-autoconf@github:esy-packages/esy-autoconf:package.json#fb93edf@d41d8cd9",
+      "name": "@opam/conf-autoconf",
+      "version": "github:esy-packages/esy-autoconf:package.json#fb93edf",
+      "source": {
+        "type": "install",
+        "source": [ "github:esy-packages/esy-autoconf:package.json#fb93edf" ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-help2man@github:esy-packages/esy-help2man#c8e6931d1dcf58a81bd801145a777fd3b115c443@d41d8cd9"
+      ],
+      "devDependencies": []
+    },
+    "@esy-ocaml/substs@0.0.1@d41d8cd9": {
+      "id": "@esy-ocaml/substs@0.0.1@d41d8cd9",
+      "name": "@esy-ocaml/substs",
+      "version": "0.0.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/@esy-ocaml/substs/-/substs-0.0.1.tgz#sha1:59ebdbbaedcda123fc7ed8fb2b302b7d819e9a46"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}
